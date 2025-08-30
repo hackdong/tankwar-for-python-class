@@ -21,9 +21,8 @@ python-classgame/
 ├── game_objects.py      # 游戏对象类
 ├── game_level.py        # 地图生成和关卡管理
 ├── game_controller.py  # 游戏控制器
-├── vision_ai.py         # 视野和AI系统
-├── 游戏说明.txt         # 游戏说明文档
-└── 教学大纲.txt         # 教学大纲
+└── vision_ai.py         # 视野和AI系统
+
 ```
 
 ## 运行游戏
