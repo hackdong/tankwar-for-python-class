@@ -1,0 +1,131 @@
+{
+    "game_settings": {
+        "screen_width": 800,
+        "screen_height": 600,
+        "fps": 60,
+        "tank_size": 40,
+        "bullet_size": 8,
+        "wall_size": 40
+    },
+    
+    "player_settings": {
+        "speed": 2,
+        "shot_cooldown": 500,
+        "vision_range": 150,
+        "hit_points": 1,
+        "colors": ["red", "yellow"]
+    },
+    
+    "enemy_settings": {
+        "normal_tank": {
+            "count": 3,
+            "speed": 1.5,
+            "shot_cooldown": 800,
+            "vision_range": 120,
+            "hit_points": 1,
+            "color": "blue",
+            "ai_decision_interval": 1000,
+            "attack_chance": 0.2,
+            "direction_change_chance": 0.3
+        },
+        
+        "commander_tank": {
+            "count": 1,
+            "speed": 1.8,
+            "shot_cooldown": 600,
+            "vision_range": 180,
+            "hit_points": 2,
+            "color": "green",
+            "ai_decision_interval": 800,
+            "attack_chance": 0.3,
+            "direction_change_chance": 0.2,
+            "defense_range": 150
+        }
+    },
+    
+    "bullet_settings": {
+        "speed": 5,
+        "spawn_distance": 5,
+        "player_bullet_color": "yellow",
+        "enemy_bullet_color": "red"
+    },
+    
+    "map_settings": {
+        "boundary_walls": true,
+        "random_soil_walls": 15,
+        "random_metal_walls": 8,
+        "base_protection_walls": true,
+        "base_position": {
+            "x": "center",
+            "y": "bottom"
+        }
+    },
+    
+    "vision_settings": {
+        "shared_vision_enabled": true,
+        "vision_grid_size": 20,
+        "player_forward_vision_multiplier": 1.0,
+        "player_side_vision_multiplier": 0.7,
+        "enemy_forward_vision_multiplier": 0.8,
+        "enemy_side_vision_multiplier": 0.5
+    },
+    
+    "ai_settings": {
+        "states": ["patrol", "attack", "defend"],
+        "patrol_speed_multiplier": 1.0,
+        "attack_speed_multiplier": 1.2,
+        "defense_speed_multiplier": 0.8,
+        "vision_check_interval": 100,
+        "attack_cooldown_frames": 30
+    },
+    
+    "difficulty_levels": {
+        "easy": {
+            "normal_tank_count": 3,
+            "enemy_speed_multiplier": 0.8,
+            "enemy_vision_multiplier": 0.7,
+            "enemy_attack_chance": 0.15
+        },
+        
+        "medium": {
+            "normal_tank_count": 5,
+            "enemy_speed_multiplier": 1.0,
+            "enemy_vision_multiplier": 1.0,
+            "enemy_attack_chance": 0.2
+        },
+        
+        "hard": {
+            "normal_tank_count": 8,
+            "enemy_speed_multiplier": 1.3,
+            "enemy_vision_multiplier": 1.3,
+            "enemy_attack_chance": 0.3
+        }
+    },
+    
+    "game_modes": {
+        "classic": {
+            "objective": "destroy_all_enemies",
+            "time_limit": null,
+            "score_multiplier": 1.0
+        },
+        
+        "defense": {
+            "objective": "protect_base",
+            "time_limit": 300,
+            "score_multiplier": 1.5
+        },
+        
+        "survival": {
+            "objective": "survive_waves",
+            "time_limit": null,
+            "score_multiplier": 2.0
+        }
+    },
+    
+    "level_progression": {
+        "enemy_count_increase": 1,
+        "enemy_speed_increase": 0.1,
+        "enemy_vision_increase": 0.05,
+        "max_level": 10
+    }
+}
